@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Sparkles, Code2, Database } from 'lucide-react';
-import sahanaProfile from '@/assets/sahana-profile.jpg';
+import sahanaProfile from '@/assets/sahana-new-profile.jpg';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -152,12 +152,12 @@ const Hero = () => {
               <div className="absolute inset-0 tech-gradient rounded-3xl blur-3xl opacity-20 animate-pulse group-hover:opacity-40 transition-opacity duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-tr from-tech-blue/20 to-tech-purple/20 rounded-3xl blur-2xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }}></div>
               
-              {/* Glass morphism frame */}
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl p-1 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 backdrop-blur-sm">
+              {/* Glass morphism frame - Square shape */}
+              <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-2xl p-1 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 backdrop-blur-sm">
                 <img
                   src={sahanaProfile}
                   alt="Sahana Kommalapati"
-                  className="w-full h-full object-cover rounded-3xl border border-primary/20 floating group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover rounded-2xl border border-primary/20 floating group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               
