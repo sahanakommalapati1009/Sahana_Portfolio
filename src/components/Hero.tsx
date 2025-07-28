@@ -157,7 +157,7 @@ const Hero = () => {
                 <img
                   src={sahanaProfile}
                   alt="Sahana Kommalapati"
-                  className="w-full h-full object-cover rounded-2xl border border-primary/20 floating group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover rounded-2xl border border-primary/20 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               
