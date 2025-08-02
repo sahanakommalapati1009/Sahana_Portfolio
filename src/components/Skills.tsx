@@ -3,102 +3,88 @@ import { Code, Database, Brain, Wrench, Cloud, GitBranch } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
-      icon: <Code size={24} />,
-      skills: ["Python", "SQL", "JavaScript", "HTML", "CSS", "R", "Java"]
+      title: "Programming",
+      icon: <Code size={20} />,
+      skills: ["Python", "SQL", "JavaScript", "HTML/CSS", "R", "Java"]
     },
     {
-      title: "Frameworks & Libraries",
-      icon: <Brain size={24} />,
-      skills: ["Streamlit", "Next.js", "React.js", "Express.js", "FastAPI", "Flask", "TensorFlow", "PyTorch"]
+      title: "Frameworks",
+      icon: <Brain size={20} />,
+      skills: ["React.js", "Next.js", "TensorFlow", "PyTorch", "FastAPI", "Streamlit"]
     },
     {
-      title: "Data Science & ML",
-      icon: <Database size={24} />,
-      skills: ["Machine Learning", "NLP", "GenAI", "FAISS", "LangChain", "LightGBM", "XGBoost", "SHAP", "Scikit-learn"]
+      title: "Data Science",
+      icon: <Database size={20} />,
+      skills: ["Machine Learning", "NLP", "GenAI", "LangChain", "XGBoost", "Scikit-learn"]
     },
     {
-      title: "Tools & Platforms",
-      icon: <Wrench size={24} />,
-      skills: ["Power BI", "Tableau", "Jupyter", "VS Code", "Docker", "Postman", "Git"]
+      title: "Tools",
+      icon: <Wrench size={20} />,
+      skills: ["Power BI", "Tableau", "Docker", "Git", "VS Code", "Jupyter"]
     },
     {
-      title: "Databases & Cloud",
-      icon: <Cloud size={24} />,
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "AWS", "GCP", "Azure", "Firebase"]
+      title: "Cloud & DB",
+      icon: <Cloud size={20} />,
+      skills: ["AWS", "GCP", "Azure", "PostgreSQL", "MongoDB", "Firebase"]
     },
     {
-      title: "Development & DevOps",
-      icon: <GitBranch size={24} />,
-      skills: ["GitHub", "CI/CD", "REST APIs", "Microservices", "Agile", "Scrum"]
+      title: "DevOps",
+      icon: <GitBranch size={20} />,
+      skills: ["CI/CD", "REST APIs", "Microservices", "Agile", "GitHub"]
     }
+  ];
+
+  const coreCompetencies = [
+    "Machine Learning", "Natural Language Processing", "Generative AI",
+    "Data Visualization", "Full-Stack Development", "Cloud Computing"
   ];
 
   return (
     <section id="skills" className="section-padding bg-darker-surface">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-3">
             Technical <span className="tech-gradient bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-24 h-1 tech-gradient mx-auto rounded-full"></div>
+          <div className="w-20 h-1 tech-gradient mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
           {skillCategories.map((category, index) => (
-            <div key={index} className="card-tech group">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+            <div key={index} className="card-tech group p-4">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
+                <h3 className="text-sm font-semibold text-foreground">
                   {category.title}
                 </h3>
               </div>
               
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-1">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group/skill">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-muted-foreground group-hover/skill:text-foreground transition-colors">
-                        {skill}
-                      </span>
-                    </div>
-                    <div className="w-full bg-secondary/30 rounded-full h-2 overflow-hidden">
-                      <div 
-                        className="h-full tech-gradient rounded-full transition-all duration-1000 ease-out group-hover:w-full"
-                        style={{
-                          width: `${70 + Math.random() * 30}%`,
-                          animationDelay: `${skillIndex * 0.1}s`
-                        }}
-                      ></div>
-                    </div>
-                  </div>
+                  <span
+                    key={skillIndex}
+                    className="text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Skill Highlights */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8 text-foreground">
+        {/* Core Competencies */}
+        <div className="text-center">
+          <h3 className="text-lg font-semibold mb-6 text-foreground">
             Core Competencies
           </h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "Machine Learning",
-              "Natural Language Processing",
-              "Generative AI",
-              "Data Visualization",
-              "Full-Stack Development",
-              "Cloud Computing",
-              "MLOps",
-              "Deep Learning"
-            ].map((competency, index) => (
+          <div className="flex flex-wrap justify-center gap-3">
+            {coreCompetencies.map((competency, index) => (
               <div
                 key={index}
-                className="px-6 py-3 rounded-full border border-primary/20 bg-primary/5 text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+                className="px-4 py-2 text-sm rounded-full border border-primary/20 bg-primary/5 text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
               >
                 {competency}
               </div>
