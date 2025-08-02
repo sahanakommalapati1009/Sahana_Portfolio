@@ -6,7 +6,7 @@ const Experience = () => {
       title: "Data Science Intern",
       company: "1Cell.Ai",
       period: "Jun 2025 – Present",
-      location: "Remote",
+      location: "On site",
       description: "Working on cutting-edge AI solutions for healthcare data analysis and predictive modeling.",
       technologies: ["Next.js", "React.js", "Express.js", "Python", "TensorFlow"],
       achievements: [
