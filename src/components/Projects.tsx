@@ -1,7 +1,63 @@
-import { ExternalLink, Github, Database, Brain, TrendingUp, Shield } from 'lucide-react';
+import { ExternalLink, Github, Database, Brain, TrendingUp, Shield, MessageSquare, Search, FileText, Network } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
+    {
+      title: "SmartDialog AI",
+      description: "Unified conversational AI suite built using LangChain, integrating OpenAI, LLaMA2, Groq, and Gemma for flexible chat interfaces and document Q&A systems.",
+      icon: <MessageSquare size={32} />,
+      technologies: ["LangChain", "OpenAI", "LLaMA2", "Groq", "FAISS", "Streamlit"],
+      features: [
+        "Multi-LLM chatbot with dynamic switching",
+        "PDF summarization & RAG",
+        "LangChain chains & tools integration",
+        "Streamlit interface for seamless interaction"
+      ],
+      github: "https://github.com/sahanakommalapati1009",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      title: "SentimentScope",
+      description: "NLP application using DistilBERT model for sentiment classification with TensorFlow and Transformers library for efficient text analysis.",
+      icon: <Search size={32} />,
+      technologies: ["DistilBERT", "TensorFlow", "Transformers", "PyTorch", "Hugging Face"],
+      features: [
+        "Pre-trained DistilBERT for sentiment analysis",
+        "PyTorch to TensorFlow conversion",
+        "Model explainability with attention weights",
+        "Model persistence for deployment"
+      ],
+      github: "https://github.com/sahanakommalapati1009",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "VeracityNet",
+      description: "Deep learning fake news detection using LSTM and Bidirectional LSTM architectures to classify news articles as real or fake.",
+      icon: <FileText size={32} />,
+      technologies: ["LSTM", "Bidirectional LSTM", "TensorFlow", "Keras", "NLTK"],
+      features: [
+        "Standard LSTM classifier",
+        "Bidirectional LSTM enhancement",
+        "Performance metrics evaluation",
+        "Reusable workflow for NLP tasks"
+      ],
+      github: "https://github.com/sahanakommalapati1009",
+      gradient: "from-green-500 to-emerald-500"
+    },
+    {
+      title: "NeuralNet DualCore",
+      description: "Dual implementation featuring ANN for customer churn prediction and CNN for image classification using TensorFlow and Keras.",
+      icon: <Network size={32} />,
+      technologies: ["TensorFlow", "Keras", "CNN", "ANN", "OpenCV", "PIL"],
+      features: [
+        "Customer churn prediction with ANN",
+        "Image classification with CNN",
+        "Data preprocessing and normalization",
+        "Performance visualization and metrics"
+      ],
+      github: "https://github.com/sahanakommalapati1009",
+      gradient: "from-orange-500 to-red-500"
+    },
     {
       title: "Amazon Sales Inventory Optimization",
       description: "A comprehensive inventory management system with Streamlit UI and PostgreSQL backend for e-commerce order tracking and optimization.",
@@ -14,8 +70,7 @@ const Projects = () => {
         "Predictive restocking alerts"
       ],
       github: "https://github.com/sahanakommalapati1009",
-      demo: "#",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-indigo-500 to-blue-500"
     },
     {
       title: "Women Safety ML Classifier",
@@ -29,8 +84,7 @@ const Projects = () => {
         "Privacy-focused design"
       ],
       github: "https://github.com/sahanakommalapati1009",
-      demo: "#",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-pink-500 to-rose-500"
     },
     {
       title: "YouTube Financial Forecasting",
@@ -44,8 +98,7 @@ const Projects = () => {
         "Interactive visualizations"
       ],
       github: "https://github.com/sahanakommalapati1009",
-      demo: "#",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-emerald-500 to-teal-500"
     },
     {
       title: "Housing Price Prediction",
@@ -59,8 +112,7 @@ const Projects = () => {
         "Feature importance analysis"
       ],
       github: "https://github.com/sahanakommalapati1009",
-      demo: "#",
-      gradient: "from-orange-500 to-red-500"
+      gradient: "from-red-500 to-orange-500"
     }
   ];
 
@@ -133,16 +185,7 @@ const Projects = () => {
                     className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-secondary/50 hover:bg-secondary transition-all duration-300 group/link"
                   >
                     <Github size={16} />
-                    <span className="text-sm font-medium group-hover/link:text-primary">Code</span>
-                  </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/link"
-                  >
-                    <ExternalLink size={16} />
-                    <span className="text-sm font-medium">Demo</span>
+                    <span className="text-sm font-medium group-hover/link:text-primary">View Code</span>
                   </a>
                 </div>
               </div>

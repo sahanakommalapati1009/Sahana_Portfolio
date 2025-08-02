@@ -6,7 +6,7 @@ const Experience = () => {
       title: "Data Science Intern",
       company: "1Cell.Ai",
       period: "Jun 2025 – Present",
-      location: "On site",
+      location: "Foster city, California",
       description: "Working on cutting-edge AI solutions for healthcare data analysis and predictive modeling.",
       technologies: ["Next.js", "React.js", "Express.js", "Python", "TensorFlow"],
       achievements: [
@@ -19,7 +19,7 @@ const Experience = () => {
       title: "Data Science Intern",
       company: "Vision Square INC",
       period: "Aug 2024 – Jan 2025",
-      location: "Buffalo, NY",
+      location: "North Carolina, NC",
       description: "Built GenAI-powered detection systems and created comprehensive data visualization dashboards.",
       technologies: ["LangChain", "FAISS", "OpenAI", "Power BI", "Python", "RAG"],
       achievements: [
@@ -48,9 +48,9 @@ const Experience = () => {
       title: "Software Engineer Intern",
       company: "Crewscale",
       period: "Jan 2021 – Jun 2021",
-      location: "Remote",
+      location: "Bangalore, India",
       description: "Focused on API integration, performance testing, and software development lifecycle.",
-      technologies: ["JavaScript", "Node.js", "REST APIs", "Testing Frameworks"],
+      technologies: ["Python", "REST API", "PostgreSQL", "Postman"],
       achievements: [
         "Integrated third-party APIs for enhanced application functionality",
         "Conducted comprehensive performance testing and optimization",
