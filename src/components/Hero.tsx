@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Sparkles, Code2, Database } from 'lucide-react';
 import sahanaProfile from '@/assets/sahana-new-profile.jpg';
-import heroBg from '@/assets/hero-background.jpg';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -28,15 +27,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Hero Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
-          alt="Hero Background" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/60"></div>
-      </div>
+      {/* Enhanced Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-darker-surface to-background"></div>
       
       {/* Mesh Gradient Overlay */}
       <div className="absolute inset-0 opacity-30">
