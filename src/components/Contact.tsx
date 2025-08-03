@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      value: "Buffalo, NY",
+      value: "Fremont, California",
       link: "#"
     }
   ];
