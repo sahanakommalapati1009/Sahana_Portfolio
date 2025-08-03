@@ -70,7 +70,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
@@ -107,83 +107,6 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="card-tech">
-            <h3 className="text-2xl font-bold text-foreground mb-6">
-              Send a Message
-            </h3>
-            
-            {isSubmitted ? (
-              <div className="text-center py-12">
-                <CheckCircle size={64} className="text-green-500 mx-auto mb-4" />
-                <h4 className="text-xl font-semibold text-foreground mb-2">
-                  Message Sent Successfully!
-                </h4>
-                <p className="text-muted-foreground">
-                  Thank you for reaching out. I'll get back to you soon.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Tell me about your project or how I can help you..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-tech flex items-center justify-center space-x-2"
-                >
-                  <Send size={20} />
-                  <span>Send Message</span>
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </div>
