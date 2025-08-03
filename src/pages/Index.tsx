@@ -34,7 +34,7 @@ const Index = () => {
           agentid="cec374fa-2f4e-429a-be4b-4315b643b2d8" 
           position="right" 
           customimage="" 
-          customtext="Call assistant"
+          customtext="talk to ai assistant"
         ></simli-widget>
       </div>
     </div>
