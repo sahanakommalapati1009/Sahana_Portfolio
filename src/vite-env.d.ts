@@ -8,6 +8,10 @@ declare namespace JSX {
       position?: string;
       customimage?: string;
       customtext?: string;
+      autostart?: string;
+      maxsize?: string;
+      size?: string;
+      showcontrols?: string;
     };
   }
 }

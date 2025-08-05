@@ -35,6 +35,8 @@ const Index = () => {
           position="right" 
           customimage="" 
           customtext="Talk to AI Assistant"
+          autostart="true"
+          maxsize="80"
         ></simli-widget>
       </div>
     </div>
