@@ -30,11 +30,11 @@ const Index = () => {
           </p>
         </div>
         <simli-widget 
-          token="gAAAAABojymJDBSiYYY7dwGCBjoRG_1aqJr08QqliB0bBliglDM3F339A2jBrGI6Iq_yCNAJQfvFkdg0JcmqTfEzqcA9kSznMto5B8mPgvPVT1_ux8QK3jQYDruzoJD9DrY4EQKgUzP5evHeERbXk-6IeXVCfK8rz95oGIA0TFV1_3Ub8Yw1tMpn1acoYjywm1ymHMRPRaTN0akcSvHP3hf0RNPxmGyIBjgAmavItvlllb2ME1-MNZd3fl0WCQM1z2JT1vsDXew91eDng_HOVEOwwy1kpI3BhJvYepMNdBAunIqtVEaRh18FpsHYLpgMlIvEfH6jxxfA84tYEPGiK-u1TMRCcF5d0SuG6IhOPZenI_wWYUi8kvj1e7yuJTHw3s4iRfaOK1QB__1rZ-4ORLv3rxhXI_tOPg==" 
-          agentid="cec374fa-2f4e-429a-be4b-4315b643b2d8" 
+          token="gAAAAABokUlio9WwWZYgsSpD2Y6V0KQyAv1VDXxrczKHvc8bjfaWO47WuGWZ3yPoh26QywA0hyqvoImvnOHWsKuadSwgKpOafdI3DaG43myz63stda20Cb80tXdpBkOdNtSEIDx36J4FjzK06ZhXPuVrtesOtwe-LNEwVXP_4FKxTJx2VDhxkFUUdXIRBsjl1Jh1aS7z-DE16bDXIS-Q5Lpisjxkipl4_g2whDQEbqijGiDH0nJ1kijvUJf5bURcGI5w3IE-tMVrywnGSDxA-xh17Dr8IiawJ35Ucj4vSsYYNaVh7poaFBJ0isYg7_z4Ih7jnkHCUpT9yo4KI5QPBPhSDDqeL7xM4Nqs-hlDLF69LgLj9P3XH-GS4e1wSZUcd0z_qTz75F22C9vcsKNLHxtnHpQE_bQ-mA==" 
+          agentid="b653438c-1a85-4a3a-9b57-e301299f2d00" 
           position="right" 
           customimage="" 
-          customtext="talk to ai assistant"
+          customtext="Talk to AI Assistant"
         ></simli-widget>
       </div>
     </div>
