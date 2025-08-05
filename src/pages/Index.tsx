@@ -22,23 +22,16 @@ const Index = () => {
       <Footer />
       
       {/* AI Assistant Widget */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
-        <div className="bg-card/90 backdrop-blur-sm border border-border rounded-lg px-3 py-2 shadow-lg">
-          <p className="text-sm font-medium text-foreground flex items-center space-x-2">
-            <span>🤖</span>
-            <span>Talk to AI Assistant</span>
-          </p>
-        </div>
-        <simli-widget 
-          token="gAAAAABokUlio9WwWZYgsSpD2Y6V0KQyAv1VDXxrczKHvc8bjfaWO47WuGWZ3yPoh26QywA0hyqvoImvnOHWsKuadSwgKpOafdI3DaG43myz63stda20Cb80tXdpBkOdNtSEIDx36J4FjzK06ZhXPuVrtesOtwe-LNEwVXP_4FKxTJx2VDhxkFUUdXIRBsjl1Jh1aS7z-DE16bDXIS-Q5Lpisjxkipl4_g2whDQEbqijGiDH0nJ1kijvUJf5bURcGI5w3IE-tMVrywnGSDxA-xh17Dr8IiawJ35Ucj4vSsYYNaVh7poaFBJ0isYg7_z4Ih7jnkHCUpT9yo4KI5QPBPhSDDqeL7xM4Nqs-hlDLF69LgLj9P3XH-GS4e1wSZUcd0z_qTz75F22C9vcsKNLHxtnHpQE_bQ-mA==" 
-          agentid="b653438c-1a85-4a3a-9b57-e301299f2d00" 
-          position="right" 
-          customimage="" 
-          customtext="Talk to AI Assistant"
-          autostart="true"
-          maxsize="80"
-        ></simli-widget>
-      </div>
+      <div 
+        id="simli-widget" 
+        data-agent-id="b653438c-1a85-4a3a-9b57-e301299f2d00"
+        data-token="gAAAAABokUlio9WwWZYgsSpD2Y6V0KQyAv1VDXxrczKHvc8bjfaWO47WuGWZ3yPoh26QywA0hyqvoImvnOHWsKuadSwgKpOafdI3DaG43myz63stda20Cb80tXdpBkOdNtSEIDx36J4FjzK06ZhXPuVrtesOtwe-LNEwVXP_4FKxTJx2VDhxkFUUdXIRBsjl1Jh1aS7z-DE16bDXIS-Q5Lpisjxkipl4_g2whDQEbqijGiDH0nJ1kijvUJf5bURcGI5w3IE-tMVrywnGSDxA-xh17Dr8IiawJ35Ucj4vSsYYNaVh7poaFBJ0isYg7_z4Ih7jnkHCUpT9yo4KI5QPBPhSDDqeL7xM4Nqs-hlDLF69LgLj9P3XH-GS4e1wSZUcd0z_qTz75F22C9vcsKNLHxtnHpQE_bQ-mA=="
+        data-autostart="true"
+        data-maxsize="80"
+        data-position="bottom-right"
+        data-customtext="Talk to AI Assistant"
+        className="fixed bottom-6 right-6 z-50"
+      ></div>
     </div>
   );
 };
