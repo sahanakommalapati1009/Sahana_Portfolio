@@ -12,7 +12,6 @@ declare namespace JSX {
       maxsize?: string;
       size?: string;
       showcontrols?: string;
-      style?: string;
     };
   }
 }
