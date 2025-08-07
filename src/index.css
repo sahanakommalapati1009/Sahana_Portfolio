@@ -283,3 +283,29 @@
     }
   }
 }
+
+/* Force Simli widget to stay small and prevent enlargement */
+simli-widget {
+  max-width: 80px !important;
+  max-height: 80px !important;
+  width: 80px !important;
+  height: 80px !important;
+  overflow: hidden !important;
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  z-index: 50 !important;
+}
+
+/* Override any internal styles that might cause enlargement */
+simli-widget * {
+  max-width: 80px !important;
+  max-height: 80px !important;
+}
+
+/* Prevent any zoom or scale transforms */
+simli-widget,
+simli-widget * {
+  transform: none !important;
+  transition: none !important;
+}
