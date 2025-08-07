@@ -29,6 +29,9 @@ const Index = () => {
           position="right" 
           customimage="https://i.postimg.cc/mrfmWhG7/sales-agent-1cell.jpg"
           customtext="Talk to AI Assistant"
+          maxsize="80"
+          size="80"
+          showcontrols="false"
         ></simli-widget>
       </div>
     </div>
