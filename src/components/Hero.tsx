@@ -36,22 +36,6 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-tech-purple/20 to-primary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      {/* Enhanced Particle System */}
-      <div className="particles">
-        {[...Array(60)].map((_, i) => (
-          <div
-            key={i}
-            className="particle"
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 8}s`,
-              animationDuration: `${8 + Math.random() * 4}s`,
-              width: Math.random() > 0.5 ? '3px' : '2px',
-              height: Math.random() > 0.5 ? '3px' : '2px',
-            }}
-          />
-        ))}
-      </div>
 
       {/* Floating geometric shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
